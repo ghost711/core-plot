@@ -16,5 +16,7 @@ let package = Package(name: "CorePlot",
                       products: [.library(name: "CorePlot",
                                           targets: ["CorePlot"])],
                       targets: [.target(name: "CorePlot",
-                                        path: "CorePlot",
-                                        publicHeadersPath: "")])
+                                        path: ".")])
+                      //targets: [.target(name: "CorePlot",
+                      //                path: "CorePlot",
+                      //                publicHeadersPath: "")])
