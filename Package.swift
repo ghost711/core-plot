@@ -8,19 +8,6 @@
 
 import PackageDescription
 
-//let package = Package(name: "CorePlot",
-//    platforms: [.macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)],
-//    products: [
-//        .library(name: "CorePlot_iOS", targets: ["CorePlot_iOS"]),
-//        .library(name: "CorePlot_OSX", targets: ["CorePlot_OSX"])
-//    ],
-//    targets: [
-//        .target(name: "CorePlot_iOS", path: "CorePlot_iOS",
-//                                      publicHeadersPath: "CorePlot.h"),
-//        .target(name: "CorePlot_OSX", path: "CorePlot_OSX",
-//                                      publicHeadersPath: "CorePlot.h")
-//    ]
-//)
 
 let package = Package(name: "CorePlot",
     platforms: [.macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)],
@@ -29,17 +16,28 @@ let package = Package(name: "CorePlot",
         .library(name: "CorePlot_OSX", targets: ["CorePlot_OSX"])
     ],
     targets: [
-        .target(name: "CorePlotCore", path: "framework/Source",
-                publicHeadersPath: ""),
-        .target(name: "CorePlot_iOS", dependencies: ["CorePlotCore"],
-                path: "framework/iPhoneOnly", publicHeadersPath: ""),
-        .target(name: "CorePlot_OSX", dependencies: ["CorePlotCore"],
-                path: "framework/MacOnly", publicHeadersPath: "")
+        .target(name: "CorePlot_iOS", path: "CorePlot_iOS",
+                                      publicHeadersPath: "CorePlot.h"),
+        .target(name: "CorePlot_OSX", path: "CorePlot_OSX",
+                                      publicHeadersPath: "CorePlot.h")
     ]
 )
-                      //targets: [.target(name: "CorePlot",
-                      //                path: "CorePlot",
-                      //                publicHeadersPath: "")])
+
+//let package = Package(name: "CorePlot",
+//    platforms: [.macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)],
+//    products: [
+//        .library(name: "CorePlot_iOS", targets: ["CorePlot_iOS"]),
+//        .library(name: "CorePlot_OSX", targets: ["CorePlot_OSX"])
+//    ],
+//    targets: [
+//        .target(name: "CorePlotCore", path: "framework/Source",
+//                publicHeadersPath: ""),
+//        .target(name: "CorePlot_iOS", dependencies: ["CorePlotCore"],
+//                path: "framework/iPhoneOnly", publicHeadersPath: ""),
+//        .target(name: "CorePlot_OSX", dependencies: ["CorePlotCore"],
+//                path: "framework/MacOnly", publicHeadersPath: "")
+//    ]
+//)
 
 /** https://github.com/ghost711/core-plot.git
 
