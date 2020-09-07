@@ -32,9 +32,9 @@ let package = Package(name: "CorePlot",
     targets: [
         .target(name: "CorePlotCore", path: "framework/Source",
                 publicHeadersPath: ""),
-        .target(name: "CorePlot_iOS", dependencies: ["UIKit", "CorePlotCore"],
+        .target(name: "CorePlot_iOS", dependencies: ["CorePlotCore"],
                 path: "framework/iPhoneOnly", publicHeadersPath: ""),
-        .target(name: "CorePlot_OSX", dependencies: ["Cocoa", "CorePlotCore"],
+        .target(name: "CorePlot_OSX", dependencies: ["CorePlotCore"],
                 path: "framework/MacOnly", publicHeadersPath: "")
     ]
 )
