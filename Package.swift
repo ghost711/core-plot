@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.2
 //
 //  Package.swift
 //  CorePlot
@@ -9,14 +9,20 @@
 import PackageDescription
 
 let package = Package(name: "CorePlot",
-                      platforms: [.macOS(.v10_10),
-                                  .iOS(.v9),
-                                  .tvOS(.v9),
-                                  .watchOS(.v2)],
-                      products: [.library(name: "CorePlot",
-                                          targets: ["CorePlot"])],
-                      targets: [.target(name: "CorePlot",
-                                        path: ".")])
+    platforms: [.macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)],
+    products: [
+        .library(name: "CorePlot_iOS", targets: ["CorePlot_iOS"]),
+        .library(name: "CorePlot_OSX", targets: ["CorePlot_OSX"])
+    ],
+    targets: [
+        .target(name: "CorePlot_iOS", path: "CorePlot_iOS"),
+        .target(name: "CorePlot_OSX", path: "CorePlot_OSX")
+    ] 
+)
                       //targets: [.target(name: "CorePlot",
                       //                path: "CorePlot",
                       //                publicHeadersPath: "")])
+
+/** https://github.com/ghost711/core-plot.git
+
+ */
