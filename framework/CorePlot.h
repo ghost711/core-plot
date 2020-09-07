@@ -7,6 +7,7 @@
 
 #else
 
+#import <Foundation/Foundation.h> // Added 2020-9-7 JM
 #import <Cocoa/Cocoa.h>
 
 #import <CorePlot/CPTDecimalNumberValueTransformer.h>
