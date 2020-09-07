@@ -16,9 +16,9 @@ let package = Package(name: "CorePlot",
         .library(name: "CorePlot_OSX", targets: ["CorePlot_OSX"])
     ],
     targets: [
-        .target(name: "CorePlot_iOS", path: "CorePlot_iOS",
+        .target(name: "CorePlot_iOS", path: "Sources/CorePlot_iOS",
                                       publicHeadersPath: "CorePlot.h"),
-        .target(name: "CorePlot_OSX", path: "CorePlot_OSX",
+        .target(name: "CorePlot_OSX", path: "Sources/CorePlot_OSX",
                                       publicHeadersPath: "CorePlot.h")
     ]
 )
