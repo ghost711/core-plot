@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 /** @category NSNumber(CPTExtensions)
  *  @brief Core Plot extensions to NSNumber.
  **/

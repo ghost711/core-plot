@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 /** @category NSDecimalNumber(CPTExtensions)
  *  @brief Core Plot extensions to NSDecimalNumber.
  **/
