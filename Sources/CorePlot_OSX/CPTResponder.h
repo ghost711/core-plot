@@ -6,6 +6,9 @@
  **/
 @protocol CPTResponder<NSObject>
 
+#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#else
+
 /// @name User Interaction
 /// @{
 
@@ -48,9 +51,6 @@
  *  @return Whether the event was handled or not.
  **/
 -(BOOL)pointingDeviceCancelledEvent:(nonnull CPTNativeEvent *)event;
-
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
-#else
 
 /**
  *  @brief @required Informs the receiver that the user has moved the scroll wheel.
