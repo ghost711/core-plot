@@ -5,7 +5,7 @@
 #else
     //#import <Foundation/Foundation.h> // Added 2020-9-7 JM
     #import <Cocoa/Cocoa.h>
-    #import "CPTDecimalNumberValueTransformer.h"
+    //#import "CPTDecimalNumberValueTransformer.h"
     #ifndef MAC_OS_X_VERSION_10_6
     #define MAC_OS_X_VERSION_10_6 1060
     #endif
