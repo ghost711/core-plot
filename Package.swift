@@ -20,7 +20,7 @@ let package = Package(name: "CorePlot",
         //.target(name: "CorePlot", path: "Sources/CorePlot_iOS",
         .target(name: "CorePlot_iOS", path: "Sources/CorePlot_iOS",
                 exclude: ["framework"],
-                publicHeadersPath: "Sources/CorePlot_iOS/include",
+                publicHeadersPath: "include",
                 //cSettings: [.define("TARGET_OS_IOS", to: "1")],
                 linkerSettings: [
                     .linkedFramework("CoreGraphics"),
