@@ -1,16 +1,12 @@
 #import <TargetConditionals.h>
 
 #if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
-
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
 #else
-
-#import <Foundation/Foundation.h> // Added 2020-9-7 JM
-#import <Cocoa/Cocoa.h>
-
-#import <CorePlot/CPTDecimalNumberValueTransformer.h>
+    #import <Foundation/Foundation.h> // Added 2020-9-7 JM
+    #import <Cocoa/Cocoa.h>
+    #import <CorePlot/CPTDecimalNumberValueTransformer.h>
 #endif
 
 #import <CorePlot/CPTAnimation.h>

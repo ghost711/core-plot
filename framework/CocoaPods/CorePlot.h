@@ -1,10 +1,10 @@
 #import <TargetConditionals.h>
 
 #if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
 #else
-#import <Cocoa/Cocoa.h>
+    #import <Cocoa/Cocoa.h>
 #endif
 
 #import "CPTAnimation.h"
