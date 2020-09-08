@@ -1,5 +1,26 @@
 #import <Availability.h>
 #import <TargetConditionals.h>
+ 
+/*---------------------- Copied from .pch 2020-9-8 JM ------------------------*/
+#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE || TARGET_OS_TV
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#else
+    #import <Cocoa/Cocoa.h>
+
+    #ifndef MAC_OS_X_VERSION_10_6
+    #define MAC_OS_X_VERSION_10_6 1060
+    #endif
+
+    #ifndef MAC_OS_X_VERSION_10_7
+    #define MAC_OS_X_VERSION_10_7 1070
+    #endif
+
+    #ifndef MAC_OS_X_VERSION_10_8
+    #define MAC_OS_X_VERSION_10_8 1080
+    #endif
+#endif
+/*----------------------------------------------------------------------------*/
 
 /// @file
 
