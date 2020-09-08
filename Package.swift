@@ -17,9 +17,13 @@ let package = Package(name: "CorePlot",
     ],
     targets: [
         .target(name: "CorePlot_iOS", path: "Sources/CorePlot_iOS",
-                                      publicHeadersPath: "CorePlot.h"),
+                cSettings: [.define("TARGET_OS_IPHONE", to: "1")],
+                publicHeadersPath: "Sources/CorePlot_iOS"
+        ),
         .target(name: "CorePlot_OSX", path: "Sources/CorePlot_OSX",
-                                      publicHeadersPath: "CorePlot.h")
+                cSettings: [.define("TARGET_OS_MACOS", to: "1")],
+                publicHeadersPath: "Sources/CorePlot_OSX"
+        )
     ]
 )
 
