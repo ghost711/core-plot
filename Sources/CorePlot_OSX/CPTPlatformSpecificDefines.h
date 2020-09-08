@@ -2,7 +2,7 @@
 
 #import <TargetConditionals.h>
 
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#if TARGET_OS_SIMULATOR || TARGET_OS_IOS
     typedef UIColor CPTNativeColor; ///< Platform-native color.
     typedef UIImage CPTNativeImage; ///< Platform-native image format.
     typedef UIEvent CPTNativeEvent; ///< Platform-native OS event.

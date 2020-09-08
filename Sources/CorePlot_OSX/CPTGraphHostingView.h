@@ -1,28 +1,44 @@
-#import <Cocoa/Cocoa.h>
+#import "SpmImporter.h"
 
-@class CPTGraph;
+#if TARGET_OS_SIMULATOR || TARGET_OS_IOS
+    #import "CPTDefinitions.h"
 
-@interface CPTGraphHostingView : NSView<NSCoding, NSSecureCoding>
+    @class CPTGraph;
 
-/// @name Hosted graph
-/// @{
-@property (nonatomic, readwrite, strong, nullable) CPTGraph *hostedGraph;
-/// @}
+    @interface CPTGraphHostingView : UIView<NSCoding, NSSecureCoding>
 
-/// @name Printing
-/// @{
-@property (nonatomic, readwrite, assign) NSRect printRect;
-/// @}
+    @property (nonatomic, readwrite, strong, nullable) CPTGraph *hostedGraph;
+    @property (nonatomic, readwrite, assign) BOOL collapsesLayers;
+    @property (nonatomic, readwrite, assign) BOOL allowPinchScaling;
 
-/// @name Cursors
-/// @{
-@property (nonatomic, readwrite, strong, nullable) NSCursor *closedHandCursor;
-@property (nonatomic, readwrite, strong, nullable) NSCursor *openHandCursor;
-/// @}
+    @end
+#else 
+    #import <Cocoa/Cocoa.h>
 
-/// @name User Interaction
-/// @{
-@property (nonatomic, readwrite, assign) BOOL allowPinchScaling;
-/// @}
+    @class CPTGraph;
 
-@end
+    @interface CPTGraphHostingView : NSView<NSCoding, NSSecureCoding>
+
+    /// @name Hosted graph
+    /// @{
+    @property (nonatomic, readwrite, strong, nullable) CPTGraph *hostedGraph;
+    /// @}
+
+    /// @name Printing
+    /// @{
+    @property (nonatomic, readwrite, assign) NSRect printRect;
+    /// @}
+
+    /// @name Cursors
+    /// @{
+    @property (nonatomic, readwrite, strong, nullable) NSCursor *closedHandCursor;
+    @property (nonatomic, readwrite, strong, nullable) NSCursor *openHandCursor;
+    /// @}
+
+    /// @name User Interaction
+    /// @{
+    @property (nonatomic, readwrite, assign) BOOL allowPinchScaling;
+    /// @}
+
+    @end
+#endif

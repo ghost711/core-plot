@@ -2477,6 +2477,8 @@
 		096BAC032507EAF40033C108 /* CorePlot_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				096BAC142507EAF40033C108 /* CPTGraphHostingView.h */,
+				096BAD0D2507EAF60033C108 /* CPTGraphHostingView.m */,
 				096BAC2B2507EAF40033C108 /* CPTImagePlatformSpecific.m */,
 				096BACE82507EAF60033C108 /* CPTPlatformSpecificCategories.h */,
 				096BAD662507EAF70033C108 /* CPTPlatformSpecificCategories.m */,
@@ -2581,8 +2583,6 @@
 				096BAD1B2507EAF60033C108 /* CPTGradient.m */,
 				096BAC382507EAF40033C108 /* CPTGraph.h */,
 				096BAD242507EAF70033C108 /* CPTGraph.m */,
-				096BAC142507EAF40033C108 /* CPTGraphHostingView.h */,
-				096BAD0D2507EAF60033C108 /* CPTGraphHostingView.m */,
 				096BAC1A2507EAF40033C108 /* CPTGridLineGroup.h */,
 				096BAD082507EAF60033C108 /* CPTGridLineGroup.m */,
 				096BAD612507EAF70033C108 /* CPTGridLines.h */,
