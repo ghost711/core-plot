@@ -2670,6 +2670,8 @@
 				096BACCB2507EAF60033C108 /* NSDecimalNumberExtensions.m */,
 				096BAD042507EAF60033C108 /* NSNumberExtensions.h */,
 				096BAC1B2507EAF40033C108 /* NSNumberExtensions.m */,
+				096BAFF82507F07C0033C108 /* CorePlot_iOS.h */,
+				096BAFF92507F07C0033C108 /* Info.plist */,
 			);
 			name = CorePlot_iOS;
 			path = ../Sources/CorePlot_iOS;
@@ -2884,8 +2886,6 @@
 		096BAFF72507F07C0033C108 /* CorePlot_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				096BAFF82507F07C0033C108 /* CorePlot_iOS.h */,
-				096BAFF92507F07C0033C108 /* Info.plist */,
 			);
 			path = CorePlot_iOS;
 			sourceTree = "<group>";
