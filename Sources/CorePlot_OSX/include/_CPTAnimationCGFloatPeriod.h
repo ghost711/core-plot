@@ -1,1 +1,0 @@
-../_CPTAnimationCGFloatPeriod.h

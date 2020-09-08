@@ -1,1 +1,0 @@
-../CPTPlotSymbol.h
