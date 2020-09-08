@@ -1,6 +1,6 @@
 /// @file
 
-#import "CorePlot.h"
+#import "SpmImporter.h"
 
 @class CPTGradient;
 @class CPTImage;

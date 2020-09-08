@@ -1,6 +1,11 @@
 //
-// Prefix header for all source files in the 'CorePlot' project.
+//  SpmImporter.h
+//  CorePlot
 //
+//  Created by Jon Mitts on 9/8/20.
+//
+
+/** Takes the place of the pch for Swift Package Manager. */
 
 #ifdef __OBJC__
     #import <TargetConditionals.h>
@@ -28,3 +33,4 @@
         #endif
     #endif
 #endif
+

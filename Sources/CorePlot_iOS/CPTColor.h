@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 #import "CPTPlatformSpecificDefines.h"
 
 @interface CPTColor : NSObject<NSCopying, NSCoding, NSSecureCoding>

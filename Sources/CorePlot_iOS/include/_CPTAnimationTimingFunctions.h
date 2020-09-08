@@ -1,1 +1,0 @@
-../_CPTAnimationTimingFunctions.h

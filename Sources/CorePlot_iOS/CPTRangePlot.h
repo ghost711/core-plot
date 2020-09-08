@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTDefinitions.h"
 #import "CPTLineStyle.h"
 #import "CPTPlot.h"

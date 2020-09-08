@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 #import "CPTShadow.h"
 
 @class CPTColor;

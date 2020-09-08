@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTDefinitions.h"
 #import "CPTPlatformSpecificDefines.h"
 

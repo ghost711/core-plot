@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 @interface CPTColorSpace : NSObject<NSCoding, NSSecureCoding>
 
 @property (nonatomic, readonly, nonnull) CGColorSpaceRef cgColorSpace;

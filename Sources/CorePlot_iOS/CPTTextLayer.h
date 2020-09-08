@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 #import "CPTBorderedLayer.h"
 #import "CPTTextStyle.h"
 

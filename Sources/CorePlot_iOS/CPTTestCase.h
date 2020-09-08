@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 #import <XCTest/XCTest.h>
 
 @interface CPTTestCase : XCTestCase

@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 #import "CPTAnnotationHostLayer.h"
 
 @class CPTLineStyle;

@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTConstraints.h"
 
 @interface _CPTConstraintsFixed : CPTConstraints

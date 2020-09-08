@@ -1,5 +1,5 @@
 /// @file
-#import "CorePlot.h"
+#import "SpmImporter.h"
 
 typedef UIColor CPTNativeColor; ///< Platform-native color.
 typedef UIImage CPTNativeImage; ///< Platform-native image format.

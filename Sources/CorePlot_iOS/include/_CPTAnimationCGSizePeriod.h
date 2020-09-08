@@ -1,1 +1,0 @@
-../_CPTAnimationCGSizePeriod.h

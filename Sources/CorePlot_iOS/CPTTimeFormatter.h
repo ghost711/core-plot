@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 @interface CPTTimeFormatter : NSNumberFormatter
 
 @property (nonatomic, readwrite, strong, nullable) NSDateFormatter *dateFormatter;

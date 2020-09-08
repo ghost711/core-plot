@@ -1,1 +1,0 @@
-../CPTImage.h

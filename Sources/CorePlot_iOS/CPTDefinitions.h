@@ -1,4 +1,3 @@
-#import "CorePlot.h"
 #import <Availability.h>
 #import <TargetConditionals.h>
  
@@ -159,6 +158,8 @@
  *  @brief The not-a-number constant (@NAN), cast to @ref CGFloat.
  **/
 #define CPTNAN ((CGFloat)NAN)
+
+#import "SpmImporter.h"
 
 /**
  *  @brief Enumeration of numeric types

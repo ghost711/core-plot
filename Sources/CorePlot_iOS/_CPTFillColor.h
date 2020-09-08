@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTFill.h"
 
 @interface _CPTFillColor : CPTFill<NSCopying, NSCoding, NSSecureCoding>

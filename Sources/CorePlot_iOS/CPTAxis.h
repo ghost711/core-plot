@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTAxisLabel.h"
 #import "CPTDefinitions.h"
 #import "CPTFill.h"

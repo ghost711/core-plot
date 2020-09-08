@@ -1,4 +1,4 @@
-#import "CorePlot.h"
+#import "SpmImporter.h"
 #import "CPTColor.h"
 #import "CPTLayer.h"
 #import "CPTPlatformSpecificDefines.h"
