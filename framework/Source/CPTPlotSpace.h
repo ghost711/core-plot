@@ -145,7 +145,7 @@ extern CPTPlotSpaceInfoKey __nonnull const CPTPlotSpaceDisplacementKey;
  **/
 -(BOOL)plotSpace:(nonnull CPTPlotSpace *)space shouldHandlePointingDeviceUpEvent:(nonnull CPTNativeEvent *)event atPoint:(CGPoint)point;
 
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#if TARGET_OS_SIMULATOR || TARGET_OS_IOS
 #else
 
 /** @brief @optional Notifies that plot space intercepted a scroll wheel event.

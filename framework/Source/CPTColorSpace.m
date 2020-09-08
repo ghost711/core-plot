@@ -32,7 +32,7 @@
 
     dispatch_once(&onceToken, ^{
         CGColorSpaceRef cgSpace = NULL;
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#if TARGET_OS_SIMULATOR || TARGET_OS_IOS
         cgSpace = CGColorSpaceCreateDeviceRGB();
 #else
         cgSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
@@ -68,7 +68,7 @@
 {
     CGColorSpaceRef cgSpace = NULL;
 
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#if TARGET_OS_SIMULATOR || TARGET_OS_IOS
     cgSpace = CGColorSpaceCreateDeviceRGB();
 #else
     cgSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);

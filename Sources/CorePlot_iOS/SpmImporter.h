@@ -10,7 +10,7 @@
 #ifdef __OBJC__
     #import <TargetConditionals.h>          //@import Darwin.TargetConditionals;
 
-    #if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE || TARGET_OS_TV
+    #if TARGET_OS_SIMULATOR || TARGET_OS_IOS || TARGET_OS_TV
         #import <Foundation/Foundation.h>   //@import Foundation;
         #import <UIKit/UIKit.h>             //@import UIKit;
     #else

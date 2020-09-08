@@ -21,7 +21,7 @@ let package = Package(name: "CorePlot",
         .target(name: "CorePlot_iOS", path: "Sources/CorePlot_iOS",
                 exclude: ["framework"],
                 publicHeadersPath: "Sources/CorePlot_iOS/include",
-                //cSettings: [.define("TARGET_OS_IPHONE", to: "1")],
+                //cSettings: [.define("TARGET_OS_IOS", to: "1")],
                 linkerSettings: [
                     .linkedFramework("CoreGraphics"),
                     .linkedFramework("QuartzCore"),

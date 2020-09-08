@@ -1,5 +1,5 @@
 //#import "SpmImporter.h"
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#if TARGET_OS_SIMULATOR || TARGET_OS_IOS
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 #else
@@ -7,13 +7,13 @@
     #import <Cocoa/Cocoa.h>
     //#import "CPTDecimalNumberValueTransformer.h"
     #ifndef MAC_OS_X_VERSION_10_6
-    #define MAC_OS_X_VERSION_10_6 1060
+        #define MAC_OS_X_VERSION_10_6 1060
     #endif
     #ifndef MAC_OS_X_VERSION_10_7
-    #define MAC_OS_X_VERSION_10_7 1070
+        #define MAC_OS_X_VERSION_10_7 1070
     #endif
     #ifndef MAC_OS_X_VERSION_10_8
-    #define MAC_OS_X_VERSION_10_8 1080
+        #define MAC_OS_X_VERSION_10_8 1080
     #endif
 #endif
 

@@ -1,5 +1,5 @@
 //#import "SpmImporter.h"
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#if TARGET_OS_SIMULATOR || TARGET_OS_IOS
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 #else
