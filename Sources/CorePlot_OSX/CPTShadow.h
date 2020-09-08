@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 @class CPTColor;
 
 @interface CPTShadow : NSObject<NSCopying, NSMutableCopying, NSCoding, NSSecureCoding>

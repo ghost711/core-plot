@@ -1,4 +1,5 @@
 /// @file
+#import "SpmImporter.h"
 
 #if __cplusplus
 extern "C" {

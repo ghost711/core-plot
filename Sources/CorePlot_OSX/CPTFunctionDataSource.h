@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTPlot.h"
 
 @class CPTPlotRange;

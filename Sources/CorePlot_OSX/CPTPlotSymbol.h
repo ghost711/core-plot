@@ -1,5 +1,7 @@
 /// @file
 
+#import "SpmImporter.h"
+
 @class CPTLineStyle;
 @class CPTFill;
 @class CPTPlotSymbol;

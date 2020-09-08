@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 /**
  *  @brief Methods used to show QuickLook previews of objects in the Xcode debugger and Swift playgrounds.
  **/

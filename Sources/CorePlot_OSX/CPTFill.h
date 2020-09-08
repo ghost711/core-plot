@@ -1,5 +1,7 @@
 /// @file
 
+#import "SpmImporter.h"
+
 @class CPTGradient;
 @class CPTImage;
 @class CPTColor;

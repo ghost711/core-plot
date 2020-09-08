@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 /** @category NSCoder(CPTExtensions)
  *  @brief Core Plot extensions to NSCoder.
  **/

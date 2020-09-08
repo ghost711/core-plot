@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTAnnotationHostLayer.h"
 #import "CPTDefinitions.h"
 #import "CPTNumericDataType.h"

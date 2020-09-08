@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 /// @file
 
 @class CPTFill;

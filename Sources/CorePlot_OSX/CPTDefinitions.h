@@ -159,6 +159,8 @@
  **/
 #define CPTNAN ((CGFloat)NAN)
 
+#import "SpmImporter.h"
+
 /**
  *  @brief Enumeration of numeric types
  **/

@@ -3,6 +3,7 @@
 
 /// @file
 
+#import "SpmImporter.h"
 #import "CPTDefinitions.h"
 
 /**

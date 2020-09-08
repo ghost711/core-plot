@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTLayer.h"
 
 @class CPTPlot;

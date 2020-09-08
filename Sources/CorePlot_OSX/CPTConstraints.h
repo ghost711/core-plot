@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 @interface CPTConstraints : NSObject<NSCopying, NSCoding, NSSecureCoding>
 
 /// @name Factory Methods

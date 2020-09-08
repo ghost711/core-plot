@@ -1,4 +1,5 @@
 // Abstract class
+#import "SpmImporter.h"
 #import "CPTBorderedLayer.h"
 #import "CPTDefinitions.h"
 #import "CPTPlot.h"

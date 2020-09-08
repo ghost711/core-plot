@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTShadow.h"
 
 @class CPTColor;

@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTLineStyle.h"
 
 @class CPTColor;

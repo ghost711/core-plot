@@ -1,3 +1,4 @@
+#import "SpmImporter.h"
 #import "CPTAxisSet.h"
 
 @class CPTXYAxis;
