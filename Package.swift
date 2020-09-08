@@ -12,11 +12,12 @@ import PackageDescription
 let package = Package(name: "CorePlot",
     platforms: [.macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)],
     products: [
-        .library(name: "CorePlot_iOS", targets: ["CorePlot_iOS"]),
+        .library(name: "CorePlot", targets: ["CorePlot"]),
+        //.library(name: "CorePlot_iOS", targets: ["CorePlot_iOS"]),
         //.library(name: "CorePlot_OSX", targets: ["CorePlot_OSX"])
     ],
     targets: [
-        .target(name: "CorePlot_iOS", path: "Sources/CorePlot_iOS",
+        .target(name: "CorePlot", path: "Sources/CorePlot_iOS",
                 exclude: ["framework"],
                 publicHeadersPath: "Sources/CorePlot_iOS",
                 //cSettings: [.define("TARGET_OS_IPHONE", to: "1")],
