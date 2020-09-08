@@ -1,4 +1,5 @@
 /// @file
+#import "CorePlot.h"
 
 /**
  *  @brief Enumeration of paragraph alignments.

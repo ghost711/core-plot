@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import "CPTMutableNumericData.h"
 #import "CPTNumericDataType.h"
 

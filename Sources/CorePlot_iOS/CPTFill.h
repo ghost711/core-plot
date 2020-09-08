@@ -1,5 +1,7 @@
 /// @file
 
+#import "CorePlot.h"
+
 @class CPTGradient;
 @class CPTImage;
 @class CPTColor;

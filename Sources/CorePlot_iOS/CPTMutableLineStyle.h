@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import "CPTLineStyle.h"
 
 @class CPTColor;

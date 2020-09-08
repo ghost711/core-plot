@@ -3,6 +3,7 @@
 
 /// @file
 
+#import "CorePlot.h"
 #import "CPTDefinitions.h"
 
 /**

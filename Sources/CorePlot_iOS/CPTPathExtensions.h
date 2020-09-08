@@ -1,4 +1,5 @@
 /// @file
+#import "CorePlot.h"
 
 #if __cplusplus
 extern "C" {

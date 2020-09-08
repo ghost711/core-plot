@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 /// @file
 
 @class CPTFill;

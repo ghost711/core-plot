@@ -1,4 +1,5 @@
 /// @file
+#import "CorePlot.h"
 
 typedef UIColor CPTNativeColor; ///< Platform-native color.
 typedef UIImage CPTNativeImage; ///< Platform-native image format.

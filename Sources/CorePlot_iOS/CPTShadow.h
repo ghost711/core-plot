@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 @class CPTColor;
 
 @interface CPTShadow : NSObject<NSCopying, NSMutableCopying, NSCoding, NSSecureCoding>

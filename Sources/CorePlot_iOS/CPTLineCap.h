@@ -1,4 +1,5 @@
 /// @file
+#import "CorePlot.h"
 
 @class CPTLineStyle;
 @class CPTFill;

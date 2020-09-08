@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import <Availability.h>
 #import <TargetConditionals.h>
  

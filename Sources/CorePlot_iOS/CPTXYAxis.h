@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import "CPTAxis.h"
 
 @class CPTConstraints;

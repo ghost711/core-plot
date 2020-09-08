@@ -1,4 +1,5 @@
 // Abstract class
+#import "CorePlot.h"
 #import "CPTBorderedLayer.h"
 #import "CPTDefinitions.h"
 #import "CPTPlot.h"

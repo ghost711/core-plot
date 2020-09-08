@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import "CPTBorderedLayer.h"
 #import "CPTPlot.h"
 

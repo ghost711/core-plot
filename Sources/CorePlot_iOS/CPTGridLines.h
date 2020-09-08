@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import "CPTLayer.h"
 
 @class CPTAxis;

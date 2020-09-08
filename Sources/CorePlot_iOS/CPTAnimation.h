@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import <QuartzCore/QuartzCore.h>
 
 @class CPTAnimationOperation;

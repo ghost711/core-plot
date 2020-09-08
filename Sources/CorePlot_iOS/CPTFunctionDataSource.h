@@ -1,3 +1,4 @@
+#import "CorePlot.h"
 #import "CPTPlot.h"
 
 @class CPTPlotRange;
