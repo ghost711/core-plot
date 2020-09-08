@@ -17,7 +17,7 @@ let package = Package(name: "CorePlot",
     ],
     targets: [
         .target(name: "CorePlot_iOS", path: "Sources/CorePlot_iOS",
-                exclude: "framework",
+                exclude: ["framework"],
                 publicHeadersPath: "Sources/CorePlot_iOS",
                 cSettings: [.define("TARGET_OS_IPHONE", to: "1")],
                 linkerSettings: [
