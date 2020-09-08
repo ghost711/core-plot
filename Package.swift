@@ -17,12 +17,12 @@ let package = Package(name: "CorePlot",
     ],
     targets: [
         .target(name: "CorePlot_iOS", path: "Sources/CorePlot_iOS",
-                cSettings: [.define("TARGET_OS_IPHONE", to: "1")],
-                publicHeadersPath: "Sources/CorePlot_iOS"
+                publicHeadersPath: "Sources/CorePlot_iOS",
+                cSettings: [.define("TARGET_OS_IPHONE", to: "1")]
         ),
         .target(name: "CorePlot_OSX", path: "Sources/CorePlot_OSX",
-                cSettings: [.define("TARGET_OS_MACOS", to: "1")],
-                publicHeadersPath: "Sources/CorePlot_OSX"
+                publicHeadersPath: "Sources/CorePlot_OSX",
+                cSettings: [.define("TARGET_OS_MACOS", to: "1")]
         )
     ]
 )
@@ -44,5 +44,8 @@ let package = Package(name: "CorePlot",
 //)
 
 /** https://github.com/ghost711/core-plot.git
-
+ Proper order:
+ .target(name:dependencies:path:exclude:sources:publicHeadersPath:cSettings:
+         cxxSettings:swiftSettings:linkerSettings:)
+ 
  */
