@@ -470,6 +470,18 @@ CPTScatterPlotBinding const CPTScatterPlotBindingPlotSymbols = @"plotSymbols"; /
 
 -(void)calculatePointsToDraw:(nonnull BOOL *)pointDrawFlags forPlotSpace:(nonnull CPTXYPlotSpace *)xyPlotSpace includeVisiblePointsOnly:(BOOL)visibleOnly numberOfPoints:(NSUInteger)dataCount
 {
+    /*.... 2026-8-13 Additions (JM) ..............................................................*/
+    CPTMutableNumericData *xData = [self cachedNumbersForField:CPTScatterPlotFieldX];
+    CPTMutableNumericData *yData = [self cachedNumbersForField:CPTScatterPlotFieldY];
+    const NSUInteger xCount = xData.numberOfSamples;
+    const NSUInteger yCount = yData.numberOfSamples;
+    if ( !xData || !yData || (xCount < dataCount) || (yCount < dataCount) ) {
+        memset(pointDrawFlags, 0, dataCount * sizeof(BOOL));
+        NSLog(@"CPTScatterPlot cache mismatch: id=%@ cached=%lu x=%lu y=%lu",
+          self.identifier,  (unsigned long)dataCount, (unsigned long)xCount, (unsigned long)yCount);
+        return;
+    }
+    /*............................................................................................*/
     if ( dataCount == 0 ) {
         return;
     }
@@ -492,8 +504,10 @@ CPTScatterPlotBinding const CPTScatterPlotBindingPlotSymbols = @"plotSymbols"; /
 
         // Determine where each point lies in relation to range
         if ( self.doublePrecisionCache ) {
-            const double *xBytes = (const double *)[self cachedNumbersForField:CPTScatterPlotFieldX].data.bytes;
-            const double *yBytes = (const double *)[self cachedNumbersForField:CPTScatterPlotFieldY].data.bytes;
+            // const double *xBytes = (const double *)[self cachedNumbersForField:CPTScatterPlotFieldX].data.bytes;
+            // const double *yBytes = (const double *)[self cachedNumbersForField:CPTScatterPlotFieldY].data.bytes;
+            const double *xBytes = (const double *)xData.data.bytes;
+            const double *yBytes = (const double *)yData.data.bytes;
 
             dispatch_apply(dataCount, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t i) {
                 const double x = xBytes[i];
@@ -512,8 +526,10 @@ CPTScatterPlotBinding const CPTScatterPlotBindingPlotSymbols = @"plotSymbols"; /
         }
         else {
             // Determine where each point lies in relation to range
-            const NSDecimal *xBytes = (const NSDecimal *)[self cachedNumbersForField:CPTScatterPlotFieldX].data.bytes;
-            const NSDecimal *yBytes = (const NSDecimal *)[self cachedNumbersForField:CPTScatterPlotFieldY].data.bytes;
+            // const NSDecimal *xBytes = (const NSDecimal *)[self cachedNumbersForField:CPTScatterPlotFieldX].data.bytes;
+            // const NSDecimal *yBytes = (const NSDecimal *)[self cachedNumbersForField:CPTScatterPlotFieldY].data.bytes;
+            const CPTDecimal *xBytes = (const CPTDecimal *)xData.data.bytes;
+            const CPTDecimal *yBytes = (const CPTDecimal *)yData.data.bytes;
 
             dispatch_apply(dataCount, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t i) {
                 const NSDecimal x = xBytes[i];
