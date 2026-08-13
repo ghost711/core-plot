@@ -528,8 +528,8 @@ CPTScatterPlotBinding const CPTScatterPlotBindingPlotSymbols = @"plotSymbols"; /
             // Determine where each point lies in relation to range
             // const NSDecimal *xBytes = (const NSDecimal *)[self cachedNumbersForField:CPTScatterPlotFieldX].data.bytes;
             // const NSDecimal *yBytes = (const NSDecimal *)[self cachedNumbersForField:CPTScatterPlotFieldY].data.bytes;
-            const CPTDecimal *xBytes = (const CPTDecimal *)xData.data.bytes;
-            const CPTDecimal *yBytes = (const CPTDecimal *)yData.data.bytes;
+            const NSDecimal *xBytes = (const NSDecimal *)xData.data.bytes;
+            const NSDecimal *yBytes = (const NSDecimal *)yData.data.bytes;
 
             dispatch_apply(dataCount, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t i) {
                 const NSDecimal x = xBytes[i];
